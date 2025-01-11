@@ -17,7 +17,7 @@ const FilterPanel = () => {
     'Last Year',
   ];
 
-  const vehicleMakes = ['Cadillac','Chevrolet','Buick','GMC','Toyota','Ram'];
+  const vehicleMakes = ['Cadillac','Chevrolet','Buick','GMC','Toyota','Ram','Honda','International','',];
 
   const handleFilterApply = () => {
     const filters = {

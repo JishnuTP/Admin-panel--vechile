@@ -16,11 +16,11 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// app.use(cors({
-//   origin: "https://test-frontend-steel.vercel.app", // Allow only this origin
-//   methods: ["GET", "POST", "PUT", "DELETE"], // Allow these HTTP methods
-//   credentials: true // Allow credentials if needed
-// }));
+app.use(cors({
+  origin: "https://test-frontend-steel.vercel.app", // Allow only this origin
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allow these HTTP methods
+  credentials: true // Allow credentials if needed
+}));
 
 // Connect to MongoDB 
 mongoose.connect('mongodb+srv://jishnu:WsHQjcIJSYUsKbxr@cluster0.hdboqfw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {

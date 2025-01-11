@@ -23,7 +23,7 @@ app.use(cors({
 }));
 
 // Connect to MongoDB 
-mongoose.connect('mongodb+srv://jishnu:WsHQjcIJSYUsKbxr@cluster0.hdboqfw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://jishnutp:qwerty123@cluster0.dzwng.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

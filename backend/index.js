@@ -33,30 +33,30 @@ mongoose.connect('mongodb+srv://jishnutp:qwerty123@cluster0.dzwng.mongodb.net/?r
 
 /// for inser data int ot database with csv file
 
-fs.createReadStream('./sample-data-v2.csv')
-  .pipe(csv())
-  .on('data', async (row) => {
-    try {
-      const inventoryData = new Inventory({
-        condition: row.condition,
-        description: row.description,
-        title: row.title,
-        brand: row.brand,
-        price: parseFloat(row.price.replace('USD', '').trim()),
-        product_type: row.product_type,
-        custom_label_0: row.custom_label_0,
-        timestamp: new Date(row.timestamp),
-      });
+// fs.createReadStream('./sample-data-v2.csv')
+//   .pipe(csv())
+//   .on('data', async (row) => {
+//     try {
+//       const inventoryData = new Inventory({
+//         condition: row.condition,
+//         description: row.description,
+//         title: row.title,
+//         brand: row.brand,
+//         price: parseFloat(row.price.replace('USD', '').trim()),
+//         product_type: row.product_type,
+//         custom_label_0: row.custom_label_0,
+//         timestamp: new Date(row.timestamp),
+//       });
 
-      await inventoryData.save();
+//       await inventoryData.save();
    
-    } catch (err) {
-      console.error('Error saving inventory data:', err);
-    }
-  })
-  .on('end', () => {
-    console.log('CSV file processing completed.');
-  });
+//     } catch (err) {
+//       console.error('Error saving inventory data:', err);
+//     }
+//   })
+//   .on('end', () => {
+//     console.log('CSV file processing completed.');
+//   });
 
 
 

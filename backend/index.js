@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: "https://test-frontend-steel.vercel.app", // Allow only this origin
+  origin: "https://admin-panel-vechile-lw24.vercel.app", // Allow only this origin
   methods: ["GET", "POST", "PUT", "DELETE"], // Allow these HTTP methods
   credentials: true // Allow credentials if needed
 }));

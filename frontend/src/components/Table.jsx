@@ -10,7 +10,7 @@ const Table = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:5000/api/tabledata'); // Replace with your API URL
+        const response = await axios.get('https://admin-panel-vechile.vercel.app/api/tabledata'); // Replace with your API URL
         setData(response.data); // Assuming the API returns an array of objects
       } catch (err) {
         setError(err.message || 'Error fetching data');

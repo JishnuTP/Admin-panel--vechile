@@ -6,7 +6,7 @@ import axios from 'axios';
 export const fetchFilteredData = createAsyncThunk(
   'data/fetchFilteredData',
   async (filters) => {  
-    const response = await axios.get('http://localhost:5000/api/inventory', { params: filters });
+    const response = await axios.get('https://admin-panel-vechile.vercel.app/api/inventory', { params: filters });
     
     return response.data;
   }
